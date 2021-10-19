@@ -6,7 +6,12 @@ class pattern1 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
 
-    pattern1(n);
+    //M2
+    int row = 1;
+    int col = 1;
+
+    // pattern1(n);
+    pattern_Method2(n,row, col);
 
   }
   public static void pattern1(int n){
@@ -21,6 +26,31 @@ class pattern1 {
     }
     System.out.println();
     
+  }
+
+  public static void pattern_Method2(int n,int row, int col){
+
+    if(n==col){    //or can write r== n+1 then no need to print extra *;
+      System.out.print("*");
+      return;
+    }
+    if(row > col){
+      System.out.print("* ");
+      //same row next column
+      pattern_Method2(n,row, col+1);
+      
+    }
+
+  
+    if(row == col){
+      //last start of rth row
+      System.out.print("*\n");
+      // System.out.println();
+      //next row and col = 1;
+      pattern_Method2(n, row+1,1);
+    }
+    
+
   }
   
 }
