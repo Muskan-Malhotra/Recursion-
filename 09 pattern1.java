@@ -1,4 +1,4 @@
-// package 01 Recursion;
+// package Recursion_With_Arrays;
 import java.io.*;
 
 class pattern1 {
