@@ -5,6 +5,10 @@ import java.io.*;
 /**
  * 08 AllIndxOcc
  */
+
+// 6
+// 15 11 40 4 4 9 
+// 4
 class AllIndxOcc {
 
   public static void main(String[] args) throws IOException{
