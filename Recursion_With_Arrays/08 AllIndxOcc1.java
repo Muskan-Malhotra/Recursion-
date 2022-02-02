@@ -17,6 +17,11 @@ class AllIndxOcc1 {
     int x = Integer.parseInt(br.readLine());
 
     int[] ans = allIndxOcc(ar,0,0,x);
+
+    if(ans.length == 0){
+      System.out.println("-1");
+    }
+
     for(int i=0;i<ans.length;i++){
       System.out.println(ans[i]);
     }
