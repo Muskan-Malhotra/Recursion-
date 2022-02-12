@@ -6,8 +6,8 @@ import java.io.*;
 
 class LinearizeCheck {
   public static void main(String[] args) throws IOException{
-    int[] X = {4,4,3,4,4};
-    int[] Y = {0,1,2,0,0};
+    int[] X = {1,1,1,0,0};
+    int[] Y = {4,4,4,4,4};
 
     int ans = Linear(X,Y,0);
 
