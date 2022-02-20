@@ -5,7 +5,7 @@ import java.io.*;
 
 /**
  * Time = O(3^n) --> three calls from every path/floor
- * Space = O(n)
+ * Space = O(n) --> Space due to recursion stack. In general no extra space is taken so O(1)
  * expectation n to 0 path is possible
  * faith == n-1, n-2, n-3 path will definitely be possible.
  * Meet expectation with faith by givings ones contribution.
