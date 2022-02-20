@@ -3,6 +3,14 @@ package Recursion_With_ArrayList;
 import java.util.*;
 import java.io.*;
 
+/**
+ * Time = O(3^n) --> three calls from every path/floor
+ * Space = O(n)
+ * expectation n to 0 path is possible
+ * faith == n-1, n-2, n-3 path will definitely be possible.
+ * Meet expectation with faith by givings ones contribution.
+ */
+
 class GetStairPath{
   public static void main(String[] args) throws IOException{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
