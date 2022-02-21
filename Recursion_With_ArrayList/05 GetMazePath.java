@@ -9,7 +9,7 @@ import java.io.*;
  * Expectation reach: add "h" to ans of AL  == (My work is inside for loop)
  * Same faith for 1,0 for v and expectation
  * Base case==> as and when sr == dr and sc == dc return [""]
- * -ve Base Case ==> When we stand outside the matrix sr>dr and sc>dc
+ * -ve Base Case ==> When we stand outside the matrix sr>dr and sc>dc  == Empty array list return
  * The working starts from 2,2
  * Time= O(2^n); Space = O(n)
 */
