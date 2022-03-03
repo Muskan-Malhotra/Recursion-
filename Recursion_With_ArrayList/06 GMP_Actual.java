@@ -3,7 +3,11 @@ package Recursion_With_ArrayList;
 import java.io.*;
 import java.util.*;
 
-class GetMazeJump {
+/**
+ * jump<= dc-sr == if dc = 4 and sc = column1 then 4-1 = 3 jumps can be taken horizontally
+ */
+
+class GMP_Actual {
   public static void main(String[] args) throws IOException{
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int r = Integer.parseInt(br.readLine());
