@@ -5,6 +5,16 @@ import java.util.*;
 
 /**
  * jump<= dc-sr == if dc = 4 and sc = column1 then 4-1 = 3 jumps can be taken horizontally
+ * the conditon in for loop for dc-sr is important becoz sr+jump is taking place which will lead to jumps outside the box and this condition is not favourable.
+ * 
+ * ---------------ALGO--------------------
+ * loop over to get the jumps coz we can't take one jump
+ * get all the paths from nbr to dest and save in AL horizontal
+ * for each loop inside the outer loop coz this will help us get paths in sequence:: w/o for each the paths are correct but seq is disturbed.
+ * To make it from src to dest = src to nbr + nbr to dest is required :: in short add you first move either in h,v or d direction
+ * 
+ * Time: 3^(n+m)
+ * Space: O(1)  if the AL keeps on incs and decs in size the space complexity is same as time complexity
  */
 
 class GMP_Actual {
@@ -28,28 +38,28 @@ class GMP_Actual {
     ArrayList<String> myans = new ArrayList<>();
 
     // for row
-    for(int jump=1;jump+sc<=dc;jump++){
+    for(int jump=1;jump<=dc-sc;jump++){
       ArrayList<String> h = gmjump(sr,sc+jump,dr,dc);
-      for(int i=0;i<h.size();i++){
-        myans.add("h"+(i+1)+h.get(i));
+      for(String values:h){
+        myans.add("h"+jump+values);
       }
     }
 
     // for column
-    for(int jump=1;jump+sr<=dr;jump++){
+    for(int jump=1;jump<=dr-sr;jump++){
       ArrayList<String> v = gmjump(sr+jump,sc,dr,dc);
 
-      for(int i=0;i<v.size();i++){
-        myans.add("v"+(i+1)+v.get(i));
+      for(String values:v){
+        myans.add("v"+jump+values);
       }
       
     }
 
     // for diagnol
-    for(int jump=1;jump+sr<=dr && jump+sc<=dc;jump++){
+    for(int jump=1;jump<=dr-sr && jump<=dc-sc;jump++){
       ArrayList<String> d = gmjump(sr+jump,sc+jump,dr,dc);
-      for(int i=0;i<d.size();i++){
-        myans.add("d"+(i+1)+d.get(i));
+      for(String values:d){
+        myans.add("d"+jump+values);
       }
     }
 
