@@ -5,7 +5,8 @@ package Recursion_WayUp;
  * levels of a,b,c and options of yes or no.
  * So 2^3 is the time complexity 2 as the options and 3 being the levels.
  * psf = Path So Far
- * 
+ * Time : 2^n
+ * Space: O(1)
  */
 
 
