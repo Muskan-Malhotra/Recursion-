@@ -13,7 +13,7 @@ import java.util.*;
  * myans = vwx
  * loop over to get each character and add the recursive function here only.
  * the recursive function adds the asf(answer so far) with the charater.
- * Time: O(n);
+ * Time: O(2^n);  --> this is becoz at every step the growth is twice the previous one.
  * Space: O(1);
  */
 
