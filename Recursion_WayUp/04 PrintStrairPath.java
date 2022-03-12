@@ -2,6 +2,11 @@ package Recursion_WayUp;
 
 import java.util.*;
 
+/**
+ * Time- O(3^n)  ---> 3 calls from each level
+ * SPace - O(1)
+ */
+
 class PrintStrairPath {
 
   public static void main(String[] args) {
