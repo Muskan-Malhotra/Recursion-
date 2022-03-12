@@ -1,4 +1,4 @@
-package Recursion_With_ArrayList;
+package Recursion_WayUp;
 
 import java.io.*;
 import java.util.*;
@@ -7,11 +7,12 @@ import java.util.*;
  * ===================GET KPC ================================
  * Similar to subsequence the only differnce is we have added an array
  * Input is sequence of strings in number. 
- * get the first number as character and after the . is encountered return the arraylist.
- * '5'-'0' = 5;
- * first getting the character 5 and then go to that index in array to get the string
- * traverse the string and just inside it traverse the recAns arraylist
- * The for loop outer one is traverse just once but then the arraylist is traversed again and again.
+ * get the first number as character 
+ * '7'-'0' = 7;
+ * rem string = 8
+ * myans = vwx
+ * loop over to get each character and add the recursive function here only.
+ * the recursive function adds the asf(answer so far) with the charater.
  * Time: O(n);
  * Space: O(1);
  */
