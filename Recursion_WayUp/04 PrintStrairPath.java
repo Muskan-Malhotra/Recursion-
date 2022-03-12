@@ -8,6 +8,8 @@ class PrintStrairPath {
     Scanner scn = new Scanner(System.in);
     int n = scn.nextInt();
     prSP(n,"");
+
+    scn.close();
   }
 
   public static void prSP(int n, String path) {
