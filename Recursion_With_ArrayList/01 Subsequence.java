@@ -8,6 +8,7 @@ class Subsequence {
 
     ArrayList<String> ar = Subseq(str);
     System.out.println(ar);
+    scn.close();
   }
 
   public static ArrayList<String> Subseq(String str){
