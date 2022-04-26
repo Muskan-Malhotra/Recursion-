@@ -40,4 +40,4 @@ class PrintMazePath {
 }
 
 
-System.out.ptinltn("Hackerank");
+// System.out.ptinltn("Hackerank");
