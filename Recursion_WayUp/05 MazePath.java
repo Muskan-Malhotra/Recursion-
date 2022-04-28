@@ -22,11 +22,8 @@ class MazePath {
             System.out.println(psf);
             return;
         }
-        if(sr > dr){
+        if(sr > dr || sc>dc){
             return;
-       }
-       if(sc > dc){
-           return;
        }
         
         printMazePaths(sr,sc+1,dr,dc,psf+"h");
