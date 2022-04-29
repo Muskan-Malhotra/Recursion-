@@ -1,6 +1,19 @@
 package Recursion_WayUp;
 
 import java.util.*;
+/**
+ * Algo
+ * abcd --> for each character from the string
+ * get each character of the string
+ * remstring is left+right  (leaving the choosen charater)
+ * Call the recursion
+ * 
+ * Time = O(n!)  this is because it depends on length ans 1 IP-> 1 OP
+ * 2 IP -> 2 OP(2*1)
+ * 3 IP -> 6 OP(3*2).....
+ * Space = O(1)
+ * 
+ */
 
 class Permutation{
 
