@@ -1,5 +1,11 @@
 package Recursion_WithBacktracking;
 import java.util.*;
+/**
+ * Works for 0 as land and 1 for obstacle
+ * tldr are the moves mentioned
+ * constraints: out of the array and obstacle and already visited
+ * visi
+ */
 
 public class floodfill {
 
