@@ -1,6 +1,15 @@
 package Recursion_WithBacktracking;
 
 import java.io.*;
+/**
+ * @LGORITHM
+ * Calculating subsets sum simple
+ * Constraints: Need the last element so idx == arr.length is imp
+ * check if the tar is equal to SOS(sum of subset) even at the last index then return SOS.
+ * Yes and No call for every array element
+ * Time = O(n^2) --> coz each level two call
+ * Space = O(1)
+ */
 
 public class targetSumSubset {
 
