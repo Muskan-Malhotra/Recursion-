@@ -4,7 +4,10 @@ import java.util.*;
  * Works for 0 as land and 1 for obstacle
  * tldr are the moves mentioned
  * constraints: out of the array and obstacle and already visited
- * visi
+ * visited boolean matrix is required to restrain loops
+ * unmarking the visited matrix is important to generate more paths.
+ * Time :4*(n^2) coz at each cell 4 ways were there t,l,d,r
+ * Space: O(n^2) coz 2D visited matrix is being used  
  */
 
 public class floodfill {
