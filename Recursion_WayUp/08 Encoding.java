@@ -9,7 +9,7 @@ import java.io.*;
  * call the recusrion add the asf
  * DO as above for two characters
  * Time= O(2^n)
- * Space = O(1)
+ * Space = O(n) as the maximum stack as the maximum depth of the recursion stack at any point can be equal to the length of the numeric string.
  */
 
 class Encoding {

@@ -10,7 +10,7 @@ import java.util.*;
  * Space: O(n^2) coz 2D visited matrix is being used  
  */
 
-public class floodfill {
+class Floodfill {
 
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
