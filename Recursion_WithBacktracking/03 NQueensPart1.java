@@ -30,6 +30,7 @@ class NQueensPart1 {
         
         
         //if queen says yes:
+        // all yes call first then all no call becoz the yes choice should be made looking that if its a last column or not
         if(j+1<n){
             printNQueens(i,j+1,qsf+i+"-"+j+" ",queen+1,n);
         }
@@ -39,7 +40,8 @@ class NQueensPart1 {
         
         
         if(j+1<n){
-            printNQueens(i,j+1,qsf,queen,n);   // queen not placed so did not add the i.j values
+            printNQueens(i,j+1,qsf,queen,n);   
+            // queen not placed so did not add the i.j values
         }
         else{
             printNQueens(i+1,0,qsf,queen,n);
