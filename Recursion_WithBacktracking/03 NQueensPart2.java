@@ -3,10 +3,10 @@ package Recursion_WithBacktracking;
 import java.io.*;
 
 /**
- * Algo for placing all the queens in a 2x2 box or nxn box.
- * Number of ways of selecting a box for placing just 2 queens! =  4C2 = 6
- * Different ways of placing queens in a box 2X2 = 2^4 = 16 
- * ^^^^^^^4 queens placed=1, 3 queens placed=4, 2 queens=6, 1 queen = 4
+ * Algo for placing one queen in each row
+ * every row must have one queen
+ * for this we gonna use for loop and will place the queens for each column!!
+ * and will increase the row for after each placement
  */
 
 class NQueensPart2 {
